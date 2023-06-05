@@ -1,0 +1,47 @@
+public class Main {
+    public static void main(String[] args) {
+        // 1) Criar um branch novo
+        String novoBranch = "meuBranch";
+
+        
+        class NomeCompleto {
+            public void imprimirNome() {
+                System.out.println("Bruno Kevin Vasconcelos Bandeira");
+            }
+        }
+
+      
+        String branchDoColega = "branchDoColega";
+        mergeBranches(novoBranch, branchDoColega);
+
+     
+        String nomeDoColega = "Robson Ferreira";
+        String branchDoColega2 = "branchDoColega2";
+        if (verificarClasseNoBranch(nomeDoColega, branchDoColega2)) {
+            System.out.println("Seu colega criou uma nova classe com o nome dele.");
+        } else {
+            System.out.println("Seu colega não criou uma nova classe com o nome dele.");
+        }
+    }
+
+    public static void mergeBranches(String branch1, String branch2) {
+        System.out.println("Realizando merge do " + branch1 + " com " + branch2);
+        // Lógica para fazer o merge dos branches
+        // Implementação de exemplo:
+        System.out.println("Merge realizado com sucesso.");
+    }
+
+    public static boolean verificarClasseNoBranch(String nomeDaClasse, String branch) {
+        System.out.println("Verificando se o branch " + branch + " possui uma classe com o nome " + nomeDaClasse);
+        // Lógica para verificar se a classe existe no branch
+        // Implementação de exemplo:
+        if (nomeDaClasse.equals("Nome do Colega")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+    }
+}
